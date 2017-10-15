@@ -1,0 +1,45 @@
+title: IT.log
+description: Описание надо добавить
+author: Yaraliev Ramazan
+github: https://github.com/orion122
+about: Junior PHP Developer
+disqus_shortname: yaraliev
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /assets/avatar.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-github
+      link: "https://github.com/orion122"
+    - icon: fa-vk
+      link: "https://vk.com/iiwii"
+
+urls:
+    - text: About Me
+      url: /about/
+#    - text: My Projects
+#      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://orion122.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
