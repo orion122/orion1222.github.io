@@ -30,7 +30,7 @@ urls:
       url: /feed.xml
 
 url: "https://orion122.github.io"
-baseurl: ""
+baseurl: "https://orion122.github.io"
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
