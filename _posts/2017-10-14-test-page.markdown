@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "История создания анонимного Telegram-бота: от идеи до реализации"
-comments: true
 ---
 ![It's time for awesome stories]({{ "/assets/time_for_stories.jpg" }})
 
