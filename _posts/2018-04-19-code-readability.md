@@ -19,9 +19,8 @@ elif not isAvailableNow and wasAvailableBefore:
 Легко читается, но тут дублируется ```save_availability_state()```.
 
 В итоге добавил функцию:
-{% highlight python %}def switch():
-    isAvailableNow = is_available_now()
-    wasAvailableBefore = was_available_before(){% endhighlight %}
+{% highlight python %}def isStateChanged(isAvailableNow, isAvailableBefore):
+    return isAvailableNow != isAvailableBefore{% endhighlight %}
 
 и переписал так:
 {% highlight python %}if isStateChanged(isAvailableNow, wasAvailableBefore):
