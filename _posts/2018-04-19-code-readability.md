@@ -9,25 +9,25 @@ title:  "Читаемость кода"
 
 Долго сидел над кодом, пока не дал функциям и переменным хорошие названия.
 В итоге код стал похож на человеческую речь. Приведу описанный на бумаге кусок кода:
-```if isAvailableNow and not wasAvailableBefore:
+{% highlight python %}if isAvailableNow and not wasAvailableBefore:
     save_availability_state(isAvailableNow)
     switch_main_cisco_to_primary()
 elif not isAvailableNow and wasAvailableBefore:
     save_availability_state(isAvailableNow)
-    switch_main_cisco_to_secondary()```
+    switch_main_cisco_to_secondary(){% endhighlight %}
 
 Легко читается, но тут дублируется ```save_availability_state()```.
 
 В итоге добавил функцию:
-```def switch():
+{% highlight python %}def switch():
     isAvailableNow = is_available_now()
-    wasAvailableBefore = was_available_before()```
+    wasAvailableBefore = was_available_before(){% endhighlight %}
 
 и переписал так:
-```if isStateChanged(isAvailableNow, wasAvailableBefore):
+{% highlight python %}if isStateChanged(isAvailableNow, wasAvailableBefore):
     save_availability_state(isAvailableNow)
     if isAvailableNow:
         switch_main_cisco_to_primary()
     else:
-        switch_main_cisco_to_secondary()```
+        switch_main_cisco_to_secondary(){% endhighlight %}
 Хотя конечно вложенность получилась больше.
