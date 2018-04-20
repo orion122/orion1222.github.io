@@ -26,4 +26,4 @@ elif not isAvailableNow and wasAvailableBefore:
 {% highlight python %}if isStateChanged(isAvailableNow, wasAvailableBefore):
     save_availability_state(isAvailableNow)
     switch_main_cisco_to_primary() if isAvailableNow else switch_main_cisco_to_secondary(){% endhighlight %}
-Хотя конечно вложенность получилась больше.
+Хотя, конечно, вложенность получилась больше, но по-моему так читается еще легче.
