@@ -16,7 +16,7 @@ elif not isAvailableNow and wasAvailableBefore:
     save_availability_state(isAvailableNow)
     switch_main_cisco_to_secondary(){% endhighlight %}
 
-Легко читается, но тут дублируется ```save_availability_state()```.
+Легко читается, но тут дублируется `save_availability_state()`.
 
 В итоге добавил функцию:
 {% highlight python %}def isStateChanged(isAvailableNow, isAvailableBefore):
