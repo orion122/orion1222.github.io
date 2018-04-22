@@ -8,9 +8,7 @@ title:  "Тренировочный pet-project #3"
 
 Поискал информацию по передаче данных из рельс во фронт. Похоже, что, к примеру, токен сессии должен быть присвоен атрибуту div'а, как-то так:
 {% highlight erb %}
-<%# welcome.html.erb %>
-<div class="session" data-session-token="<%= @session_token %>">
-</div>
+<div class="session" data-session-token="<%= @session_token %>"></div>
 {% endhighlight %}
 а потом в js извлечь этот токен из атрибута:
 {% highlight coffeescript %}
