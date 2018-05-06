@@ -19,3 +19,10 @@ title:  "Тренировочный pet-project #6"
 
 Токены сессий перезаписываются в переменную хранящуюся в LocalStorage и передаются в контроллер в хедере. Благодаря этому токен сессии в URL не появляется.
 В качестве шаблонизатора выбрал slim.
+
+Полезные ссылки:
+- [Template language Slim](https://github.com/slim-template/slim)
+- [Шаблонизатор Slim — альтернатива Haml'y](https://habr.com/post/128645/)
+- [AASM - State machines for Ruby classes](https://github.com/aasm/aasm)
+- [State machines in Rails 5](https://medium.com/geogo-in/state-machines-in-rails-5-45259a4f42da)
+- [Роутинг в Rails](http://rusrails.ru/rails-routing)
