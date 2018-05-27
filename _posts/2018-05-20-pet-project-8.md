@@ -7,7 +7,7 @@ title:  "Тренировочный pet-project #8"
 - удалять закомментированные строки кода
 - удалить бессмысленные состояния сообщений ('отправлено, неотправлено')
 - заменить `urlsafe_base64` на `uuid`
-- `map` -> `find_each` (заменил, но надо почитать про это)
+- `map` заменить на `find_each`
 - вернуть `index unique` для токена сессии
 
 
@@ -38,3 +38,4 @@ title:  "Тренировочный pet-project #8"
 - [Rspec subject](https://relishapp.com/rspec/rspec-core/docs/subject)
 - [Better specs (subject)](http://www.betterspecs.org/#subject)
 - [Rails 5 Routes: Scope vs Namespace](https://devblast.com/b/rails-5-routes-scope-vs-namespace)
+- [How Do Batched Queries Work?](http://www.monkeyandcrow.com/blog/reading_rails_how_do_batched_queries_work/)
