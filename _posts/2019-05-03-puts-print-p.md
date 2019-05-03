@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Различия между puts, print и p
 
