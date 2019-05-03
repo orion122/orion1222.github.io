@@ -3,8 +3,6 @@ published: true
 layout: post
 title: 'Различия между puts, print и p'
 ---
-## Различия между puts, print и p
-
 - **puts** в отличие от **print** добавляет новую строку в конце:
 {% highlight ruby %}
 puts 123
