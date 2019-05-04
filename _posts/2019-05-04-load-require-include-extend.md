@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: load и require. include и extend
 ---
@@ -26,4 +26,3 @@ $ ruby first.rb
 Снова первый файл.
 Второй файл.
 {% endhighlight %}
-
