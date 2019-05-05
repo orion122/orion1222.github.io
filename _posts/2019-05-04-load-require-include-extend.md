@@ -58,10 +58,9 @@ $ ruby -e 'puts $LOAD_PATH'
 {% highlight ruby %}
 # first.rb
 puts 'Первый файл.'
-require './second.rb'
+require './second'
 puts 'Снова первый файл.'
 require './second'
-load './second.rb'
 {% endhighlight %}
 
 {% highlight ruby %}
@@ -77,4 +76,4 @@ $ ruby first.rb
 {% endhighlight %}
 
 ### require_relative
-Третий способ загрузки файлов - **require_relative**. Этот метод производит поиск относительно каталога, в котором находится файл, из которого он вызван. Таким образом, в предыдущем примере можно было написать `require_relative 'second.rb'`.
+Третий способ загрузки файлов - **require_relative**. Этот метод производит поиск относительно каталога, в котором находится файл, из которого он вызван. Таким образом, в предыдущем примере можно было написать `require_relative 'second'`.
