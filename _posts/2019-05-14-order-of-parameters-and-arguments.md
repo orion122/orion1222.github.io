@@ -41,3 +41,56 @@ mixed_args(1,2,3)
 #[]
 #3
 {% endhighlight %}
+
+Пример когда один из параметров имеет значение по-умолчанию:
+{% highlight ruby %}
+def args_unleashed(a,b=1,*c,d,e)
+    puts "Arguments:"
+    p a,b,c,d,e
+end
+
+#========irb session===========
+irb(main):016:0> args_unleashed(1, 2, 3, 4, 5)
+Arguments:
+1
+2
+[3]
+4
+5
+=> [1, 2, [3], 4, 5]
+irb(main):017:0> args_unleashed(1, 2, 3, 4)
+Arguments:
+1
+2
+[]
+3
+4
+=> [1, 2, [], 3, 4]
+irb(main):018:0> args_unleashed(1, 2, 3)
+Arguments:
+1
+1
+[]
+2
+3
+=> [1, 1, [], 2, 3]
+irb(main):019:0> args_unleashed(1, 2, 3, 4, 5, 6, 7)
+Arguments:
+1
+2
+[3, 4, 5]
+6
+7
+=> [1, 2, [3, 4, 5], 6, 7]
+{% endhighlight %}
+
+![Приоритет присваиваний]({{site.baseurl}}/assets/order-of-priority-assignments.png)
+
+Параметры со значением по-умолчанию не могут находиться справа от параметра со звездочкой.
+{% highlight console %}
+irb(main):020:0> def broken_args(x, *y, z=1)
+irb(main):021:1> end
+SyntaxError: (irb):20: syntax error, unexpected '=', expecting ')'
+def broken_args(x, *y, z=1)
+                         ^
+{% endhighlight %}
