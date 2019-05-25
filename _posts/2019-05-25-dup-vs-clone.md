@@ -30,7 +30,7 @@ b
 
 ![dup vs clone]({{site.baseurl}}/assets/dup-vs-clone.png)
 
-### Замороженные объекты
+### Отличия
 **dup** и **clone** не являются алиасами друг друга. Между ними есть несколько небольших различий. Отличие в том, что dup не копирует frozen-статус, tainted-статус, singleton-класс объекта.
 
 {% highlight ruby %}
@@ -85,4 +85,5 @@ copy.map(&:object_id)
 Как видно, идентификаторы строк одинаковы даже после клонирования массива.
 
 [Dup vs Clone in Ruby: Understanding The Differences](https://www.rubyguides.com/2018/11/dup-vs-clone/)
+
 [Копирование объектов в Ruby](http://rubydev.ru/2012/09/03/object-copying-in-ruby-dup-clone/)
